@@ -1,17 +1,11 @@
-class MyCliAT100 < Formula
-  desc "A description of your CLI tool"
-  homepage "https://github.com/yourusername/your-repo"
-  url "https://github.com/yourusername/your-repo/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "<SHA256_OF_V1.0.0_TARBALL>"
+class MyCli < Formula
+  desc "Your CLI tool"
+  homepage "https://github.com/John12356/homebrew-my-cli"
+  url "https://github.com/John12356/homebrew-my-cli/releases/download/v1.0.0/my-cli-1.0.0-darwin-amd64.tar.gz"
+  sha256 "C26AFA30BD770D34C82DA509F50396D0F5FB96EA44C83999126EB5CA8C78437C"
   license "MIT"
 
-  depends_on "go" => :build
-
   def install
-    system "go", "build", "-o", bin/"my-cli"
-  end
-
-  test do
-    system "#{bin}/my-cli", "--version"
+    bin.install "bin/my-cli"
   end
 end
