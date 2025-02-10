@@ -7,6 +7,6 @@ class MyCli < Formula
   version "1.0.0"
 
   def install
-    bin.install "my-cli-1.0.0-darwin-amd64/bin/my-cli"
+    bin.install "bin/my-cli"
   end
 end
