@@ -10,7 +10,7 @@ class Securden < Formula
   end
 
   on_arm do
-    url "https://github.com/John12356/homebrew-my-cli/releases/download/v1.0.0/securden-cli-darwin-arm64.tar.gz"
+    url "https://github.com/John12356/homebrew-my-cli/releases/download/v#{version}/securden-cli-darwin-arm64.tar.gz"
     sha256 "CE25FBD115CFF988D87A89EA29586D3E038C02D42C360C9D4A36298A4D0FA860"
   end
 
